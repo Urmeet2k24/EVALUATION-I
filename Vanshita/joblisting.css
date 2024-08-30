@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of items to next row */
+    justify-content: flex-start; /* Align items to the start */
+    gap: 20px; /* Space between each card */
+    padding: 20px; /* Padding around the container */
+    max-width: 100%; /* Allow container to take full width */
+}
+
+.job-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(25% - 20px); /* Four cards in a row with space */
+    box-sizing: border-box; /* Ensure padding and width work well together */
+    flex: none;
+}
+
+.job-card img {
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+.job-details h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.job-details p {
+    font-size: 14px;
+    color: #666;
+}
+
+.location {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.job-actions {
+    margin-top: 15px;
+}
+
+.job-actions button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;
+}
+
+.job-actions button:hover {
+    background-color: #555;
+}
