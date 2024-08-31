@@ -8,10 +8,12 @@ body {
 .container {
     display: flex;
     flex-wrap: wrap; /* Allow wrapping of items to next row */
-    justify-content: flex-start; /* Align items to the start */
+    justify-content: center; /* Align items to the start */
     gap: 20px; /* Space between each card */
     padding: 20px; /* Padding around the container */
     max-width: 100%; /* Allow container to take full width */
+    align-items: center;
+
 }
 
 .job-card {
@@ -22,13 +24,13 @@ body {
     width: calc(25% - 20px); /* Four cards in a row with space */
     box-sizing: border-box; /* Ensure padding and width work well together */
     flex: none;
-}
-
-.job-card img {
-    max-width: 100%;
-    margin-bottom: 15px;
-}
-
+   
+    img {
+        width: 100px; /* Sets the width to 100 pixels */
+        height: auto; /* Adjusts the height automatically to maintain the aspect ratio */
+        display: flex; /* Makes sure the content inside the row stretches to fill the space */
+      justify-content: center
+    }
 .job-details h2 {
     font-size: 18px;
     margin-bottom: 10px;
