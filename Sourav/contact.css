@@ -13,7 +13,7 @@ textarea {
 }
 
 .container {
-  background-image: url(https://www.webstrot.com/html/jobpro/job_dark/images/header/header_img.jpg);
+  background-image: url(https://cdn.wallpapersafari.com/36/70/95iSO4.jpg);
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -37,7 +37,7 @@ textarea {
 }
 
 .contact-form {
-  background-color: #1abc9c;
+  background-color: #144992;
   position: relative;
 }
 
@@ -46,7 +46,7 @@ textarea {
   position: absolute;
   width: 26px;
   height: 26px;
-  background-color: #1abc9c;
+  background-color: #144992;
   transform: rotate(45deg);
   top: 50px;
   left: -13px;
@@ -76,9 +76,9 @@ form {
   width: 100%;
   outline: none;
   border: 2px solid #fafafa;
-  background: none;
+  background:#fff;
   padding: 0.6rem 1.2rem;
-  color: #fff;
+  color: #0f0e0e;
   font-weight: 500;
   font-size: 0.95rem;
   letter-spacing: 0.5px;
@@ -100,7 +100,7 @@ textarea.input {
   left: 15px;
   transform: translateY(-50%);
   padding: 0 0.4rem;
-  color: #fafafa;
+  color: #59a4ea;
   font-size: 0.9rem;
   font-weight: 400;
   pointer-events: none;
@@ -118,7 +118,7 @@ textarea.input {
   background-color: #fff;
   border: 2px solid #fafafa;
   font-size: 0.95rem;
-  color: #1abc9c;
+  color: #1a86bc;
   line-height: 1;
   border-radius: 25px;
   outline: none;
@@ -152,7 +152,7 @@ textarea.input {
   opacity: 0;
   transition: 0.3s;
   height: 5px;
-  background-color: #1abc9c;
+  background-color: #1a76bc;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -184,17 +184,17 @@ textarea.input {
 }
 
 .contact-info .title {
-  color: #1abc9c;
+  color: #144992;
 }
 
 .text {
-  color: #333;
+  color: #144992;
   margin: 1.5rem 0 2rem 0;
 }
 
 .information {
   display: flex;
-  color: #555;
+  color: #144992;
   margin: 0.7rem 0;
   align-items: center;
   font-size: 0.95rem;
@@ -210,7 +210,7 @@ textarea.input {
 }
 
 .social-media p {
-  color: #333;
+  color: hsl(201, 76%, 42%);
 }
 
 .social-icons {
@@ -222,7 +222,7 @@ textarea.input {
   width: 35px;
   height: 35px;
   border-radius: 5px;
-  background: linear-gradient(45deg, #1abc9c, #149279);
+  background: linear-gradient(45deg, #1a63bc, #144992);
   color: #fff;
   text-align: center;
   line-height: 35px;
@@ -239,7 +239,7 @@ textarea.input {
   position: absolute;
   width: 110px;
   height: 100px;
-  border: 22px solid #1abc9c;
+  border: 22px solid #1a93bc;
   border-radius: 50%;
   bottom: -77px;
   right: 50px;
