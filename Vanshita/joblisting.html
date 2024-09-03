@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job Listings</title>
+    <title>JobPro</title>
     <link rel="stylesheet" href="joblisting.css">
 </head>
 <body>
@@ -25,118 +25,67 @@
             </div>
         </div>
     </nav>
-    <div class="search-container">
-        <input type="text" placeholder="Skills, Job Title, Designation" class="search-input">
-        <input type="text" placeholder="Location" class="search-input">
-        <input type="text" placeholder="Experience" class="search-input">
-        <button class="search-button">Search</button>
-    </div>
-    <div class="container">
-        <div class="job-card">
-            <div class="company-logo">
-                <img src="comapnylogo1.jpeg" alt="Company Logo">
-            </div>
-            <div class="job-details">
-                <h2>Job:  Manager</h2>
-                <h3>Airtel</h3>
-                <p>Validation of plan and engagement with Central Planning team.
-                    Inventory tracking and engagement with SCM
-                    Close working with Operations team on fiber pair availability and fiber loss rectification.
-                    Co-ordination with ToCo / Infra teams for RFAI
-                    Prioritize delivery as per business requirement</p>
-            </div>
-            <div class="location">
-                <span> GURGAON  </span>
-            </div>
-            <div class="job-actions">
-                <button>Apply Now</button>
-            </div>
-        </div>
 
-        <div class="job-card">
-            <div class="company-logo">
-                <img src="companylogo2.jpeg" alt="Company Logo">
-            </div>
-            <div class="job-details">
-                <h2>Job: Senior Engineer</h2>
-                <h3>Reliance Industries (RIL)</h3>
-                <p>Look after the operation & maintenance of HVAC systems
-                    Perform routine inspections, maintenance, and repairs on HVAC systems to ensure optimal performance and longevity.
-                    Troubleshoot and resolve issues related to heating, cooling, and ventilation systems</p>
-            </div>
-            <div class="location">
-                <span> MUMBAI</span>
-            </div>
-            <div class="job-actions">
-                <button>Apply Now</button>
-            </div>
-        </div>    
-        <div class="job-card">
-            <div class="company-logo">
-                <img src="companylogo5.jpeg" alt="Company Logo">
-            </div>
-            <div class="job-details">
-                <h2>Job: Automation Test Engineer</h2>
-                <h3>TATA Consultancy Services</h3>
-                <p>TCS has always been in the spotlight for being adept in the next big technologies. What we can offer you is a space to explore varied technologies and quench your techie soul.
-                </p>
-            </div>
-            <div class="location">
-                <span>KOLKATA</span>
-            </div>
-            <div class="job-actions">
-                <button>Apply Now</button>
-            </div>
-        </div>
-        <div class="job-card">
-            <div class="company-logo">
-                <img src="companylogo6.jpeg" alt="Company Logo">
-            </div>
-            <div class="job-details">
-                <h2>Job: Technical Project Manager</h2>
-                <h3>Datamatics</h3>
-                <p>Minimum 15 yrs of experience.Technical Project manager.Team handling experience of Min 50 members .Experience in .net development.Experience in Logistic / Transportation domain is must.Experience in Fixed price and T&M projects</p>
-            </div>
-            <div class="location">
-                <span> DELHI</span>
-            </div>
-            <div class="job-actions">
-                <button>Apply Now</button>
-            </div>
-        </div>
-        <div class="job-card">
-            <div class="company-logo">
-                <img src="companylogo7.png" alt="Company Logo">
-            </div>
-            <div class="job-details">
-                <h2>Job:Senior Fashion Consultant  </h2>
-                <h3>Reliance Retail</h3>
-                <p>Contribute to achieve store KPIs.
-                    Utilize the knowledge of trends and guide each customer on what suits better in line with the customer needs, individuality and product range.Believes and lives the attitude of Sheer customer delight go beyond your KPIs</p>
-            </div>
-            <div class="location">
-                <span>MANGALURU </span>
-            </div>
-            <div class="job-actions">
-                <button>Apply Now</button>
-            </div>
-        </div>
-        <div class="job-card">
-            <div class="company-logo">
-                <img src="companylogo8.jpg" alt="Company Logo">
-            </div>
-            <div class="job-details">
-                <h2>Job:Chartered Accountant </h2>
-                <h3>ICIC Bank</h3>
-                <p>CICI Bank is pleased to onboard Chartered Accountants across various functional domains like Relationship Management, Credit Management, Risk & Compliance, Audit, and Product Management.</p>
-            </div>
-            <div class="location">
-                <span>HYDERABAD</span>
-            </div>
-            <div class="job-actions">
-                <button>Apply Now</button>
-            </div>
-        </div>
+    <div class="search-bar">
+        <input type="text" placeholder="Skills, Job Title, Designation">
+        <input type="text" placeholder="Location">
+        <input type="text" placeholder="Experience">
+        <button>Search</button>
     </div>
+
+    <section class="job-listings">
+        <div class="job-card">
+            <img src="comapnylogo1.jpeg" alt="Airtel Logo">
+            <h3>Job: Manager</h3>
+            <h3>Airtel</h3>
+            
+            <p>GURGAON</p>
+            <p> <button>View Details</button></p>
+            <button>Apply Now</button>
+        </div>
+        <div class="job-card">
+            <img src="companylogo2.jpeg" alt="Reliance Logo">
+            <h3>Job:Senior Engineer </h3>
+            <p>Reliance Industries (RIL)</p>
+            
+            <p>Delhi</p>
+            <p> <button>View Details</button></p>
+            <button>Apply Now</button>
+        </div>
+        <div class="job-card">
+            <img src="companylogo5.jpeg" alt="Reliance Logo">
+            <h3>Job:Full Stack Python Developer </h3>
+            <p>TATA Consultancy Services</p>
+           
+            <p>MUMBAI</p>
+            <p> <button>View Details</button></p>
+            <button>Apply Now</button>
+        </div>
+        <div class="job-card">
+            <img src="companylogo6.jpeg" alt="Reliance Logo">
+            <h3>Job: Full Stack Java Developer with Oracle</h3>
+            <p>Datamatics</p>
+            <p>Bangalore</p>
+            <p> <button>View Details</button></p>
+            <button>Apply Now</button>
+        </div>
+        <div class="job-card">
+            <img src="companylogo7.png" alt="Reliance Logo">
+            <h3>Job:  Fashion Consultant</h3>
+            <p>Reliance Brands (RBL)</p>
+            <p>Kolkata</p>
+           <p> <button>View Details</button></p> 
+            <button>Apply Now</button>
+        </div>
+        <div class="job-card">
+            <img src="companylogo8.jpg" alt="Reliance Logo">
+            <h3>Job: Hiring Chartered Accountant</h3>
+            <p>ICICI Bank</p>
+    
+            <p>Hyderabad</p>
+           <p> <button>View Details</button></p> 
+            <button>Apply Now</button>
+        </div>
+    </section>
 </body>
 </html>
