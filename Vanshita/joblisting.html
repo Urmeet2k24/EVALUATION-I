@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Listings</title>
     <link rel="stylesheet" href="joblisting.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header class="header">
@@ -14,12 +15,12 @@
         </div>
         <nav class="nav">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/EVALUATION-I/Yash/homepage.html">Home</a></li>
+
                 <li><a href="#">Company Details</a></li>
-                <li><a href="#">All Jobs</a></li>
                 <li><a href="#">Internships</a></li>
                 <li><a href="#">Plans</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="http://127.0.0.1:5500/EVALUATION-I/Sourav/contact.html"">Contact Us</a></li>
 
     </header>
 
@@ -40,8 +41,8 @@
                 <p>Google - Mountain View, CA</p>
                 <p>Posted: 2 days ago</p>
                 <div class="buttons">
-                    <a href="#" class="view-btn">View Details</a>
-                    <a href="#" class="apply-btn">Apply Now</a>
+                    <button class="view-details-btn" onclick="viewDetails('Software Engineer', 'Google', 'Mountain View, CA', 'Design and develop scalable software solutions. Collaborate with cross-functional teams to define and implement features')">View Details</button>
+                    <button class="apply-now-btn" onclick="applyNow('Software Engineer')">Apply Now</button>
                 </div>
             </div>
 
@@ -53,8 +54,8 @@
                 <p>Facebook - Menlo Park, CA</p>
                 <p>Posted: 5 days ago</p>
                 <div class="buttons">
-                    <a href="#" class="view-btn">View Details</a>
-                    <a href="#" class="apply-btn">Apply Now</a>
+                    <button class="view-details-btn" onclick="viewDetails('Product Manager', 'Facebook', 'Menlo Park, CA', 'Lead product initiatives, define product roadmap, and work with engineers and designers to implement features.')">View Details</button>
+                    <button class="apply-now-btn" onclick="applyNow('Product Manager')">Apply Now</button>
                 </div>
             </div>
 
@@ -66,8 +67,8 @@
                 <p>Netflix - Los Gatos, CA</p>
                 <p>Posted: 1 week ago</p>
                 <div class="buttons">
-                    <a href="#" class="view-btn">View Details</a>
-                    <a href="#" class="apply-btn">Apply Now</a>
+                    <button class="view-details-btn" onclick="viewDetails('Data Scientist', 'Netflix', 'Los Gatos, CA', ' Analyze large datasets, build predictive models, and support decision-making through data insights.')">View Details</button>
+                    <button class="apply-now-btn" onclick="applyNow('Data Scientist')">Apply Now</button>
                 </div>
             </div>
 
@@ -79,8 +80,8 @@
                 <p>Apple - Cupertino, CA</p>
                 <p>Posted: 3 days ago</p>
                 <div class="buttons">
-                    <a href="#" class="view-btn">View Details</a>
-                    <a href="#" class="apply-btn">Apply Now</a>
+                    <button class="view-details-btn" onclick="viewDetails('UX Designer', 'Apple', 'Cupertino, CA', 'Create intuitive user experiences by designing interfaces and workflows that enhance user satisfaction.')">View Details</button>
+                    <button class="apply-now-btn" onclick="applyNow('UX Designer')">Apply Now</button>
                 </div>
             </div>
 
@@ -92,8 +93,8 @@
                 <p>Airtel - Vasant Kunj,New Delhi</p>
                 <p>Posted: 1 days ago</p>
                 <div class="buttons">
-                    <a href="#" class="view-btn">View Details</a>
-                    <a href="#" class="apply-btn">Apply Now</a>
+                    <button class="view-details-btn" onclick="viewDetails('Full Stack Developer', 'Airtel', 'Vasant Kunj,New Delhi', 'Develop and maintain both front-end and back-end of web applications. Collaborate with UI/UX designers and other developers.')">View Details</button>
+                    <button class="apply-now-btn" onclick="applyNow('Full Stack Developer')">Apply Now</button>
                 </div>
             </div>
 
@@ -105,15 +106,51 @@
                 <p>Microsoft - Noida</p>
                 <p>Posted: 8 days ago</p>
                 <div class="buttons">
-                    <a href="#" class="view-btn">View Details</a>
-                    <a href="#" class="apply-btn">Apply Now</a>
+                    <button class="view-details-btn" onclick="viewDetails('CA', 'Microsoft ', 'Noida', ' Manage financial records, audits, and ensure compliance with regulations. Provide financial insights for business decisions.')">View Details</button>
+                    <button class="apply-now-btn" onclick="applyNow('CA')">Apply Now</button>
                 </div>
             </div>
         </section>
     </main>
-
     <footer class="footer">
-        <p>&copy; 2024 JobPro. All rights reserved.</p>
+        <div class="container">
+            <div class="footer-columns">
+                <!-- Column 1: About Section -->
+                <div class="footer-column">
+                    <h5>About Us</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Praesent faucibus eros nec nisi laoreet, in pharetra ligula tempus.</p>
+                </div>
+    
+                <!-- Column 2: Quick Links -->
+                <div class="footer-column">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Column 3: Social Media Links -->
+                <div class="footer-column">
+                    <h5>Follow Us</h5>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 Your Website. All Rights Reserved. | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
     </footer>
+    
 </body>
+<script src="joblisting.js"></script>
 </html>

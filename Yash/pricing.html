@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plans</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="pricing.css">
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <a href="homepage.html">
+            <img src="https://www.webstrot.com/html/jobpro/job_dark/images/header/logo.png" alt="Job Pro">
+          </a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home" class="active-first">Home</a></li>
+          <li><a href="#about">Company-Details</a></li>
+          <li><a href="joblisting.html">All Jobs</a></li>
+          <li><a href="#Internships">Internships</a></li>
+          <li><a href="#plans">Plans</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="pricing-section">
+    <h1>Pricing Plans</h1>
+    <div class="pricing-cards">
+      <!-- Basic Plan -->
+      <div class="pricing-card">
+        <h2>Basic</h2>
+        <div class="price">$39</div>
+        <ul>
+          <li><span>&#10004;</span> Job Listings: 5</li>
+          <li><span>&#10060;</span> Featured Job Postings</li>
+          <li><span>&#10060;</span> Resume Access</li>
+          <li><span>&#10004;</span> Email Notifications</li>
+          <li><span>&#10060;</span> Basic Support</li>
+        </ul>
+        <button class="buy-btn" data-plan="Basic">Buy Now</button>
+      </div>
+
+      <!-- Standard Plan -->
+      <div class="pricing-card">
+        <h2>Standard</h2>
+        <div class="price">$69</div>
+        <ul>
+          <li><span>&#10004;</span> Job Listings: 15</li>
+          <li><span>&#10004;</span> Featured Job Postings</li>
+          <li><span>&#10004;</span> Resume Access</li>
+          <li><span>&#10004;</span> Email Notifications</li>
+          <li><span>&#10060;</span> Premium Support</li>
+        </ul>
+        <button class="buy-btn" data-plan="Standard">Buy Now</button>
+      </div>
+
+      <!-- Premium Plan -->
+      <div class="pricing-card featured">
+        <h2>Premium</h2>
+        <div class="price">$99</div>
+        <ul>
+          <li><span>&#10004;</span> Job Listings: Unlimited</li>
+          <li><span>&#10004;</span> Featured Job Postings</li>
+          <li><span>&#10004;</span> Resume Access</li>
+          <li><span>&#10004;</span> Email Notifications</li>
+          <li><span>&#10004;</span> Priority Customer Support</li>
+        </ul>
+        <button class="buy-btn" data-plan="Premium">Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Payment Modal -->
+  <div class="modal" id="paymentModal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>Complete Your Payment</h2>
+      <h3 id="selected-plan">Selected Plan: </h3>
+
+      <!-- Payment Form -->
+      <form id="paymentForm">
+        <div class="payment-methods">
+          <label>
+            <input type="radio" name="payment-method" value="credit-card" checked> Credit/Debit Card
+          </label>
+          <label>
+            <input type="radio" name="payment-method" value="paypal"> PayPal
+          </label>
+          <label>
+            <input type="radio" name="payment-method" value="upi"> UPI
+          </label>
+        </div>
+
+        <!-- Card Payment Details -->
+        <div class="payment-details">
+          <div class="input-group">
+            <label for="cardholder-name">Cardholder Name</label>
+            <input type="text" id="cardholder-name" name="cardholder-name" required>
+          </div>
+
+          <div class="input-group">
+            <label for="card-number">Card Number</label>
+            <input type="text" id="card-number" name="card-number" maxlength="16" placeholder="1234 5678 9101 1121" required>
+          </div>
+
+          <div class="input-group-row">
+            <div class="input-group">
+              <label for="expiry-date">Expiry Date</label>
+              <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+            </div>
+            <div class="input-group">
+              <label for="cvv">CVV</label>
+              <input type="password" id="cvv" name="cvv" maxlength="3" placeholder="123" required>
+            </div>
+          </div>
+        </div>
+
+        <!-- PayPal Section -->
+        <div class="paypal-details" style="display: none;">
+          <p>Proceed to PayPal for a secure transaction.</p>
+        </div>
+
+        <!-- UPI Section -->
+        <div class="upi-details" style="display: none;">
+          <p>Enter your UPI ID for payment.</p>
+          <div class="input-group">
+            <label for="upi-id">UPI ID</label>
+            <input type="text" id="upi-id" name="upi-id" placeholder="example@upi">
+          </div>
+        </div>
+
+        <button type="submit" class="pay-btn">Pay Now</button>
+      </form>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-columns">
+        <!-- Column 1: About Section -->
+        <div class="footer-column">
+          <h5>About Us</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Praesent faucibus eros nec nisi laoreet, in pharetra ligula tempus.</p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-column">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Social Media Links -->
+        <div class="footer-column">
+          <h5>Follow Us</h5>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2024 Your Website. All Rights Reserved. | <a href="#">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+<script>
+  <!-- JavaScript for Popup and Payment Logic -->
+  // JavaScript for modal popup
+  const modal = document.getElementById("paymentModal");
+  const closeModal = document.querySelector(".close-btn");
+  
+  document.querySelectorAll('.buy-btn').forEach(button => {
+    button.addEventListener('click', function() {
+      const plan = this.getAttribute('data-plan');
+      document.getElementById('selected-plan').textContent = `Selected Plan: ${plan}`;
+      modal.style.display = "flex"; // Use 'flex' to ensure it's centered
+    });
+  });
+  
+  closeModal.addEventListener('click', function() {
+    modal.style.display = "none";
+  });
+  
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  
+  // Payment method selection logic
+  const paymentMethods = document.querySelectorAll('input[name="payment-method"]');
+  const cardDetails = document.querySelector('.payment-details');
+  const paypalDetails = document.querySelector('.paypal-details');
+  const upiDetails = document.querySelector('.upi-details');
+  
+  paymentMethods.forEach(method => {
+    method.addEventListener('change', function() {
+      if (this.value === 'credit-card') {
+        cardDetails.style.display = 'block';
+        paypalDetails.style.display = 'none';
+        upiDetails.style.display = 'none';
+      } else if (this.value === 'paypal') {
+        cardDetails.style.display = 'none';
+        paypalDetails.style.display = 'block';
+        upiDetails.style.display = 'none';
+      } else if (this.value === 'upi') {
+        cardDetails.style.display = 'none';
+        paypalDetails.style.display = 'none';
+        upiDetails.style.display = 'block';
+      }
+    });
+  });
+</script>
+</body>
+</html>
