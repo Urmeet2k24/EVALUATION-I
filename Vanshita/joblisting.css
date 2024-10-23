@@ -157,7 +157,7 @@ body {
     align-items: center;
 }
 
-.apply-btn, .view-btn {
+.apply-now-btn, .view-details-btn {
     display: inline-block;
     padding: 10px 20px;
     background-color: #4A90E2;
@@ -168,15 +168,15 @@ body {
     margin-left: 5px;
 }
 
-.view-btn {
+.view-details-btn {
     background-color: #50E3C2;
 }
 
-.apply-btn:hover {
+.apply-now-btn:hover {
     background-color: #357ABD;
 }
 
-.view-btn:hover {
+.view-details-btn:hover {
     background-color: #3DBEA3;
 }
 
