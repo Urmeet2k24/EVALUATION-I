@@ -248,12 +248,11 @@ body {
     text-decoration: underline;
   }
   
-  /* Social Media Links Styling */
   .footer .social-links {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 15px; /* Space between icons */
+    gap: 15px; 
   }
   
   .footer .social-links i {
@@ -271,7 +270,6 @@ body {
     transform: scale(1.1);
   }
   
-  /* Footer Columns and Links */
   .footer-columns {
     display: flex;
     justify-content: space-between;
@@ -329,19 +327,4 @@ body {
     text-decoration: underline;
   }
   
-  /* Responsive Design for Footer */
-  @media (max-width: 768px) {
-    .footer-columns {
-        flex-direction: column;
-        text-align: center;
-    }
   
-    .footer-column {
-        margin-bottom: 30px;
-        align-items: center;
-    }
-  
-    .social-links {
-        justify-content: center;
-    }
-  }
