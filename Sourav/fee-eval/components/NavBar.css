@@ -1,0 +1,17 @@
+ul {
+    display: flex;
+    gap: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    list-style-type: none;
+    background-color: aquamarine;
+    width: 1200px;
+
+    
+  }
+  
+  li {
+    border: 4px solid greenyellow;
+    margin-left:120px ;
+  }
